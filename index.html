@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Arial', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'xl': '20px 20px 60px 15px rgba(0, 0, 0, 0.5)',
+                    }
+                },
+            },
+            variants: {},
+            plugins: [],
+        }
+    </script>
+
+</head>
+
+<body class="h-screen w-full bg-[#4b5553] flex justify-center items-center">
+
+    <div
+        class="
+        h-[60%] w-[90%] min-w-[800px] max-w-[1400px] min-h-[600px]
+        flex justify-between bg-[url('img/pexels1.jpg')]
+        bg-bottom bg-no-repeat bg-cover text-white shadow-xl relative">
+
+        <div id="scheda"
+            class="
+            h-full w-[40%] max-w-[500px] 
+            flex flex-col justify-center items-center 
+            backdrop-blur-md">
+            <div>
+                <div>
+                    <div class="text-4xl tracking-[0.50em] font-extrabold mb-3">TREK</div>
+                    <div class="flex items-center">
+                        <span class="h-2 w-28 bg-[#dc5c16] mr-6"></span>
+                        <div class="text-xl tracking-[0.25em]">STRADA X1</div>
+                    </div>
+                </div>
+
+                <ul class="my-12 text-sm text-gray-400">
+                    <li>
+                        <div>Telaio</div>
+                        <div>Carbonio OCLV 500 Series</div>
+                        <div class="h-[1px] w-60 bg-gray-400 my-3"></div>
+                    </li>
+                    <li>
+                        <div>Forcella</div>
+                        <div>Trek SL in carbonio</div>
+                        <div class="h-[1px] w-60 bg-gray-400 my-3"></div>
+                    </li>
+                    <li>
+                        <div>Movimento Centrale</div>
+                        <div>BB90, ad alta rigidità</div>
+                        <div class="h-[1px] w-60 bg-gray-400 my-3"></div>
+                    </li>
+                    <li>
+                        <div>Peso</div>
+                        <div>8,45 kg (taglia 56)</div>
+                        <div class="h-[1px] w-60 bg-gray-400 my-3"></div>
+                    </li>
+                    <li>
+                        <div>Prezzo</div>
+                        <div>€5.999</div>
+                        <div class="h-[1px] w-60 bg-gray-400 my-3"></div>
+                    </li>
+                </ul>
+
+                <div class="text-xl flex items-center">
+                    <a href="#"><i class="fa-solid fa-chevron-left text-[#dc5c16]"></i></a>
+                    <div class="mx-6">TREK Strada X2</div>
+                    <a href="#"></a><i class="fa-solid fa-chevron-right text-[#dc5c16]"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="mt-6 mr-14">
+            <ul class="flex">
+                <li><a class="ml-14" href="#">Home</a></li>
+                <li><a class="ml-14" href="#">Modelli</a></li>
+                <li><a class="ml-14" href="#">Accessori</a></li>
+                <li><a class="ml-14" href="#">Contatti</a></li>
+            </ul>
+        </nav>
+
+        <img 
+        src="img/bike1.png" 
+        alt="bike" 
+        class="max-w-full h-[650px] bottom-[-90px] right-40 absolute">
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
